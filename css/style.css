@@ -1,5 +1,14 @@
+/*
+Colors used:
+Background Color: #FBE19F;
+Primary Color: #FFCF5A;
+Secondary Color: #FFEF7F;
+Text Color: #735E59;
+Hover Color: #FFEF7F:
+*/
+* {box-sizing: border-box;}
 body {
-  background-color: #ffffff;
+  background-color: #FFF5D9;
   font-family: 'Source Sans Pro', sans-serif;
   font-size:16px;
   font-weight:300;
@@ -26,4 +35,35 @@ h3 {
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 img {
   width: 100%;
+}
+a {
+  color: #735E59;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #FFCF5A;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #FFCF5A;
+}
+a:hover,
+a:focus {
+  color: #FFCF5A;
+  text-decoration: underline;
+}
+.button {
+background-color: #735E59;
+color: #FFFFFF; /* needed to override the default link color */
+font-weight: 400;
+padding: 10px;
+border-radius: 3px;
+border-bottom: 2px solid #FFEF7F; /* width of the border, type, color */
+transition: 0.2s opacity;
+}
+.button.contact {
+  background-color: #FFFFFF;
+  color: #735E59;
+  text-transform: uppercase;
+  border: 2px solid #735E59;
 }
