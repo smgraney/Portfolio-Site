@@ -6,7 +6,19 @@ Secondary Color: #FFEF7F;
 Text Color: #735E59;
 Hover Color: #FFEF7F:
 */
-* {box-sizing: border-box;}
+header {
+  background-color: #FFCF5A;
+  padding: 10px;
+  margin: 10px;
+}
+padding-top: 10px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-left: 5px;
+text-align: center;
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #FFF5D9;
   font-family: 'Source Sans Pro', sans-serif;
@@ -49,7 +61,7 @@ a:active { /* selected link */
 }
 a:hover,
 a:focus {
-  color: #FFCF5A;
+  color: #FFFFFF;
   text-decoration: underline;
 }
 .button {
@@ -66,4 +78,34 @@ transition: 0.2s opacity;
   color: #735E59;
   text-transform: uppercase;
   border: 2px solid #735E59;
+}
+/* Layout styling */
+.container {
+  padding: 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+.center {
+  text-align: center;
+}
+.logo {
+max-width: 250px;
+text-align: center;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  padding: 0 15px;
+text-transform: uppercase;
+font-weight: 700;
+color: #4a4a4a;
+}
+#hero {
+  background-color: #FFCF5A;
+}
+main {
+  padding-top: 133px;
 }
