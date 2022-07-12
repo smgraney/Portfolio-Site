@@ -22,7 +22,7 @@ text-align: center;
 body {
   background-color: #FFF5D9;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size:16px;
+  font-size:18px;
   font-weight:300;
   line-height:1.6;
   color:#735E59
@@ -89,23 +89,59 @@ transition: 0.2s opacity;
 .center {
   text-align: center;
 }
-.logo {
+/*.logo {
 max-width: 250px;
 text-align: center;
-}
+} */
 nav > ul {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
   width: 100%;
   padding: 0 15px;
 text-transform: uppercase;
 font-weight: 700;
-color: #4a4a4a;
+color: #FFCF5A;
+}
+nav>ul>li {
+  display:inline-block;
 }
 #hero {
   background-color: #FFCF5A;
+  text-align:center;
+}
+#hero span {
+  display: block;
 }
 main {
   padding-top: 133px;
 }
+/* ==============================
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+header {
+  text-align: unset;
+}
+.logo {
+    max-width: 65px;
